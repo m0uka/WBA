@@ -1,0 +1,46 @@
+* {
+    font-family: 'Inter', sans-serif;
+    color: #E5E7EB;
+}
+
+html {
+    background-color: #111827;
+}
+
+.title-container {
+    text-align: center;
+    max-width: 75%;
+    margin: auto;
+}
+
+.title {
+    font-size: 30px;
+
+    background: -webkit-linear-gradient(left, #FB923C, #EA580C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+
+    font-weight: bold;
+}
+
+#lorem {
+    letter-spacing: 0.7px;
+    line-height: 26px;
+    /* font-size: 20px; */
+}
+
+.subtitle {
+    color: #60A5FA;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h2 {
+    color: #22C55E;
+    font-weight: 600;
+    font-size: 25px;
+}
