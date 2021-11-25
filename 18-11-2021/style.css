@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+    
+    gap: 20px;
+    row-gap: 200px;
+
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: auto;
+}
+
+.flex-items {
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.flex-items p {
+    color: white;
+    text-align: center;
+    font-family: Inter, sans-serif;
+}
