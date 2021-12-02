@@ -106,7 +106,7 @@ main {
     flex-direction: column;
     font-family: Verdana;
 
-    box-shadow: 0px 0px 3px 3px rgba(221, 221, 221, 0.335);
+    box-shadow: 0px 0px 15px 5px rgba(221, 221, 221, 0.335);
 }
 
 .container h1 {
