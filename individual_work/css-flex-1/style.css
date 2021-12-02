@@ -1,12 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     margin: auto;
-    background-color: blue;
+    background-color: rgba(11, 187, 26, 0.712);
     display: flex;
-    height: 70vh;
+    height: 100vh;
 
     justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
 }
 
 .inner-container {
@@ -16,6 +21,9 @@
 
     padding: 1rem;
     gap: 10px;
+
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 
     justify-content: space-between;
     align-items: center;
