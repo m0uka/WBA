@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+$accent-color: #CBC1B1;
+$bg-color: rgba(248, 247, 236, 0.5);
+$primary-color: rgba(124, 116, 116, 1);
+$font-color: black;
+$font-light: rgba(248, 247, 236, 1);
+$bg-opacity: rgba(248, 247, 236, 0.3);
+$font: 'Lato';
+$primary-bg: rgba(203, 193, 177, 1);
+
+body {
+    background-color: $bg-color;
+}
+
+p, h1, h2, h3 {
+    font-family: $font, sans-serif;
+    color: $font-color;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+button {
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 7.5rem;
+    height: 1.5625rem;
+
+    background-color: $bg-opacity;
+    font-family: $font;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+
+    filter: drop-shadow(0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+    text-transform: uppercase;
+}
+
+@mixin text {
+    font-family: $font;
+}
+
+@mixin black-text {
+    @include text;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.6875rem;
+    line-height: 0.8125rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+footer {
+    background-color: $primary-bg;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        @include black-text;
+        text-decoration: none;
+    }
+}

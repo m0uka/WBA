@@ -1,0 +1,111 @@
+.navbar {
+    $padding: 2.5rem;
+
+    background-color: $accent-color;
+    width: calc(100% - 2 * $padding);
+    height: 5rem;
+    display: flex;
+
+    padding: 0 $padding;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        width: 100%;
+    }
+}
+
+.container {
+    padding: 2.5rem;
+
+    .cta-block {
+        margin-top: 0.625rem;
+        background-color: $primary-color;
+        width: 100%;
+
+        .cta-head {
+            height: 3.875rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            h1 {
+                color: $font-light;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                text-align: center;
+                font-size: 1.25rem;
+            }
+        }
+
+        .cta-content {
+            padding: 0rem 0.625rem 0.625rem 0.625rem;
+
+            p {
+                color: $font-light;
+            }
+        }
+
+        .cta-footer {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .destinations {
+        margin-top: 3.125rem;
+
+        h2 {
+            @include black-text;
+            text-align: center;
+        }
+
+        .cta-destinations {
+            margin-top: 2.5rem;
+            width: 100%;
+
+            button {
+                background-color: $primary-color;
+                color: $font-light;
+            }
+        }
+
+        .destinations-content {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2.1875rem;
+
+            .destination {
+                display: flex;
+
+                .destination-info {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-left: 1.0625rem;
+
+                    .destination-info-title {
+                        @include black-text;
+                    }
+
+                    .destination-info-desc {
+                        @include black-text;
+                        font-weight: 300;
+                        font-size: 0.625rem;
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+    }
+}
