@@ -862,4 +862,110 @@ footer a {
     font-size: 18px;
   }
 }
+
+.contact-main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-main-content .cta-contact {
+  margin-bottom: 70px;
+}
+
+.contact-main-content .cta-contact button {
+  width: 120px;
+  height: 25px;
+  background-color: #7c7474;
+  color: white;
+}
+
+.contact-main-content .contact-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+}
+
+.contact-main-content .contact-head h1 {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contact-main-content .contact-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.contact-main-content .contact-form .input-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.contact-main-content .contact-form .input-item input, .contact-main-content .contact-form .input-item textarea {
+  display: block;
+  background-color: rgba(124, 116, 116, 0.3);
+  border: none;
+  padding: 10px;
+  width: 100%;
+  resize: none;
+}
+
+.contact-main-content .contact-form .input-item textarea {
+  height: 145px;
+}
+
+.contact-main-content .contact-form .input-item input::-webkit-input-placeholder, .contact-main-content .contact-form .input-item textarea::-webkit-input-placeholder {
+  color: black;
+  font-family: 'Lato';
+  font-size: 13px;
+}
+
+.contact-main-content .contact-form .input-item input:-ms-input-placeholder, .contact-main-content .contact-form .input-item textarea:-ms-input-placeholder {
+  color: black;
+  font-family: 'Lato';
+  font-size: 13px;
+}
+
+.contact-main-content .contact-form .input-item input::-ms-input-placeholder, .contact-main-content .contact-form .input-item textarea::-ms-input-placeholder {
+  color: black;
+  font-family: 'Lato';
+  font-size: 13px;
+}
+
+.contact-main-content .contact-form .input-item input::placeholder, .contact-main-content .contact-form .input-item textarea::placeholder {
+  color: black;
+  font-family: 'Lato';
+  font-size: 13px;
+}
 /*# sourceMappingURL=styles.css.map */
