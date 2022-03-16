@@ -429,6 +429,11 @@ footer a {
           justify-content: center;
 }
 
+.navbar .logo img {
+  width: 80px;
+  height: 80px;
+}
+
 .navbar .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -440,6 +445,10 @@ footer a {
       -ms-flex-pack: right;
           justify-content: right;
   width: 100%;
+}
+
+.navbar .menu .menu-desktop {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {

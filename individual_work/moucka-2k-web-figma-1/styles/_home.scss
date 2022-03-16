@@ -12,6 +12,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
     }
 
     .menu {
@@ -19,6 +24,10 @@
         align-items: center;
         justify-content: right;
         width: 100%;
+
+        .menu-desktop {
+            display: none;
+        }
     }
 
     @media only screen and (min-width: 768px) {
