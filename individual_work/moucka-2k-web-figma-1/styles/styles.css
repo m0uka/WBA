@@ -890,6 +890,14 @@ footer a {
   color: white;
 }
 
+@media only screen and (min-width: 768px) {
+  .contact-main-content .cta-contact button {
+    font-size: 18px;
+    width: 180px;
+    height: 50px;
+  }
+}
+
 .contact-main-content .contact-head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -903,6 +911,16 @@ footer a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-main-content .contact-head {
+    margin-top: 60px;
+    margin-bottom: -20px;
+  }
+  .contact-main-content .contact-head h1 {
+    font-size: 48px;
+  }
 }
 
 .contact-main-content .contact-form {
@@ -967,5 +985,24 @@ footer a {
   color: black;
   font-family: 'Lato';
   font-size: 13px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-main-content .contact-form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 380px 380px;
+        grid-template-columns: 380px 380px;
+  }
+  .contact-main-content .contact-form .input-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contact-main-content .contact-form .input-item textarea {
+    height: 210px;
+  }
+  .contact-main-content .contact-form .grid-fill {
+    grid-column: span 2;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
