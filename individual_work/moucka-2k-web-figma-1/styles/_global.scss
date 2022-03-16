@@ -9,6 +9,7 @@ $bg-opacity: rgba(248, 247, 236, 0.3);
 $font: 'Lato';
 $primary-bg: rgba(203, 193, 177, 1);
 $navbar-height-desktop: 150px;
+$footer-height: 90px;
 
 body {
     background-color: $bg-color;
@@ -65,14 +66,94 @@ button {
 
 footer {
     background-color: $primary-bg;
-    height: 90px;
+    height: $footer-height;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
     a {
         @include black-text;
         text-decoration: none;
+    }
+}
+
+.navbar {
+    $padding: 2.5rem;
+
+    background-color: $accent-color;
+    width: calc(100% - 2 * $padding);
+    height: 5rem;
+    display: flex;
+
+    padding: 0 $padding;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        width: 100%;
+
+        .menu-desktop {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        height: $navbar-height-desktop;
+
+        .logo {
+            img {
+                width: 150px;
+                height: 150px;
+            }
+            margin-left: 163px;
+        }
+
+        .menu {
+            .menu-desktop {
+                display: flex;
+                margin-top: 48px;
+                margin-bottom: 48px;
+                margin-right: 165px;
+                gap: 30px;
+
+                .menu-item {
+                    padding: 10px;
+
+                    .menu-item-text {
+                        text-decoration: none;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        color: $font-color;
+                        font-weight: 700;
+                        font-family: $font;
+                    }
+                }
+
+                .menu-item-active {
+                    background-color: rgba(124, 116, 116, 0.3);
+                    
+                }
+            }
+
+            .menu-burger {
+                display: none;
+            }
+        }
     }
 }
