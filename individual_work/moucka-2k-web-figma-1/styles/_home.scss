@@ -20,6 +20,48 @@
         justify-content: right;
         width: 100%;
     }
+
+    @media only screen and (min-width: 768px) {
+        height: 150px;
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin-left: 163px;
+        }
+
+        .menu {
+            .menu-desktop {
+                display: flex;
+                margin-top: 48px;
+                margin-bottom: 48px;
+                margin-right: 165px;
+                gap: 30px;
+
+                .menu-item {
+                    padding: 10px;
+
+                    .menu-item-text {
+                        text-decoration: none;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        color: $font-color;
+                        font-weight: 700;
+                        font-family: $font;
+                    }
+                }
+
+                .menu-item-active {
+                    background-color: rgba(124, 116, 116, 0.3);
+                    
+                }
+            }
+
+            .menu-burger {
+                display: none;
+            }
+        }
+    }
 }
 
 .container {
@@ -70,6 +112,9 @@
         }
 
         .cta-destinations {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-top: 2.5rem;
             width: 100%;
 

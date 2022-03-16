@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;600;700&display=swap.css");
 html {
   line-height: 1.15;
   /* 1 */
@@ -349,6 +349,7 @@ body {
 p, h1, h2, h3 {
   font-family: "Lato", sans-serif;
   color: black;
+  -webkit-font-smoothing: antialiased;
 }
 
 button, input[type="submit"], input[type="reset"] {
@@ -441,6 +442,43 @@ footer a {
   width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  .navbar {
+    height: 150px;
+  }
+  .navbar .logo {
+    width: 150px;
+    height: 150px;
+    margin-left: 163px;
+  }
+  .navbar .menu .menu-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    margin-right: 165px;
+    gap: 30px;
+  }
+  .navbar .menu .menu-desktop .menu-item {
+    padding: 10px;
+  }
+  .navbar .menu .menu-desktop .menu-item .menu-item-text {
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+    font-family: "Lato";
+  }
+  .navbar .menu .menu-desktop .menu-item-active {
+    background-color: rgba(124, 116, 116, 0.3);
+  }
+  .navbar .menu .menu-burger {
+    display: none;
+  }
+}
+
 .container {
   padding: 2.5rem;
 }
@@ -508,6 +546,15 @@ footer a {
 }
 
 .container .destinations .cta-destinations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 2.5rem;
   width: 100%;
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;500;600;700&display=swap.css');
 
 $accent-color: #CBC1B1;
 $bg-color: rgba(248, 247, 236, 0.5);
@@ -16,6 +16,7 @@ body {
 p, h1, h2, h3 {
     font-family: $font, sans-serif;
     color: $font-color;
+    -webkit-font-smoothing: antialiased;
 }
 
 button, input[type="submit"], input[type="reset"] {
