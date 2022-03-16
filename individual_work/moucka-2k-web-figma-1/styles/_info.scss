@@ -8,6 +8,10 @@
     margin-top: 70px;
     margin-bottom: 70px;
 
+    a {
+        text-decoration: none;
+    }
+
     .info-item {
         display: flex;
 
@@ -29,6 +33,42 @@
             p {
                 @include black-text;
                 font-size: 12px;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        display: grid;
+
+        margin-left: 190px;
+        margin-right: 190px;
+        margin-top: 210px;
+        margin-bottom: 200px;
+
+        column-gap: 50px;
+        row-gap: 110px;
+
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto auto auto;
+
+        .info-item {
+            .info-item-image {
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+
+            .info-item-content {
+                display: flex;
+                margin-left: 25px;
+                align-items: center;
+    
+                p {
+                    @include black-text;
+                    font-size: 18px;
+                }
             }
         }
     }
