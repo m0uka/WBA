@@ -456,9 +456,11 @@ footer a {
     height: 150px;
   }
   .navbar .logo {
+    margin-left: 163px;
+  }
+  .navbar .logo img {
     width: 150px;
     height: 150px;
-    margin-left: 163px;
   }
   .navbar .menu .menu-desktop {
     display: -webkit-box;
@@ -651,6 +653,11 @@ footer a {
   display: flex;
 }
 
+.container .destinations .destinations-content .destination .destination-image img {
+  width: 115px;
+  height: 115px;
+}
+
 .container .destinations .destinations-content .destination .destination-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -688,5 +695,61 @@ footer a {
   font-weight: 300;
   font-size: 0.625rem;
   text-transform: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .container .destinations h2 {
+    font-size: 36px;
+  }
+  .container .destinations .destinations-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 160px;
+    margin-right: 160px;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 100px;
+  }
+  .container .destinations .destinations-content .destination {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .destinations .destinations-content .destination .destination-image img {
+    width: 350px;
+    height: 350px;
+  }
+  .container .destinations .destinations-content .destination .destination-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 350px;
+  }
+  .container .destinations .destinations-content .destination .destination-info .destination-info-title {
+    font-size: 24px;
+  }
+  .container .destinations .destinations-content .destination .destination-info .destination-info-desc {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .container .destinations .cta-destinations {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .container .destinations .cta-destinations button {
+    width: 180px;
+    height: 55px;
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -34,8 +34,10 @@
         height: $navbar-height-desktop;
 
         .logo {
-            width: 150px;
-            height: 150px;
+            img {
+                width: 150px;
+                height: 150px;
+            }
             margin-left: 163px;
         }
 
@@ -204,6 +206,13 @@
             .destination {
                 display: flex;
 
+                .destination-image {
+                    img {
+                        width: 115px;
+                        height: 115px;
+                    }
+                }
+
                 .destination-info {
                     display: flex;
                     justify-content: center;
@@ -223,5 +232,61 @@
                 }
             }
         }
+
+        @media only screen and (min-width: 768px) {
+            h2 {
+                font-size: 36px;
+            }
+
+            .destinations-content {
+                flex-direction: row;
+                margin-left: 160px;
+                margin-right: 160px;
+                gap: 30px;
+                justify-content: center;
+                margin-top: 100px;
+
+                .destination {
+                    text-align: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .destination-image {
+                        img {
+                            width: 350px;
+                            height: 350px;
+                        }
+                    }
+
+                    .destination-info {
+                        justify-content: center;
+                        max-width: 350px;
+
+                        .destination-info-title {
+                            font-size: 24px;
+                        }
+
+                        .destination-info-desc {
+                            margin-top: 10px;
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+                
+            }
+
+            .cta-destinations {
+                margin-top: 100px;
+                margin-bottom: 100px;
+
+                button {
+                    width: 180px;
+                    height: 55px;
+                    font-size: 18px;
+                }
+            }
+        }
+
     }
 }
