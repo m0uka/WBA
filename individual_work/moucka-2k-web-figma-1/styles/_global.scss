@@ -8,10 +8,14 @@ $font-light: rgba(248, 247, 236, 1);
 $bg-opacity: rgba(248, 247, 236, 0.3);
 $font: 'Lato';
 $primary-bg: rgba(203, 193, 177, 1);
-$navbar-height-desktop: 150px;
+$navbar-height-desktop: 120px;
 $footer-height: 90px;
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     background-color: $bg-color;
 }
 
@@ -71,9 +75,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
     bottom: 0;
     width: 100%;
+
+    position: relative;
+    clear: both;
 
     a {
         @include black-text;
@@ -118,8 +124,8 @@ footer {
 
         .logo {
             img {
-                width: 150px;
-                height: 150px;
+                width: 120px;
+                height: 120px;
             }
             margin-left: 163px;
         }
