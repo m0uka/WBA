@@ -1,6 +1,6 @@
 
 .container {
-    padding: 2.5rem;
+    padding: 40px;
 
     @media only screen and (min-width: $mobile-breakpoint) {
         .main-content {
@@ -24,12 +24,12 @@
     
 
     .cta-block {
-        margin-top: 0.625rem;
+        margin-top: 10px;
         background-color: $primary-color;
         width: 100%;
 
         .cta-head {
-            height: 3.875rem;
+            height: 62px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,12 +40,12 @@
                 text-transform: uppercase;
                 letter-spacing: 0.1em;
                 text-align: center;
-                font-size: 1.25rem;
+                font-size: 20px;
             }
         }
 
         .cta-content {
-            padding: 0rem 0.625rem 0.625rem 0.625rem;
+            padding: 0px 10px 10px 10px;
 
             p {
                 color: $font-light;
@@ -59,29 +59,29 @@
         }
 
         @media only screen and (min-width: $mobile-breakpoint) {
-            width: 650px;
-            height: 350px;
-            margin-bottom: 80px;
+            width: 40.625rem;
+            height: 21.875rem;
+            margin-bottom: 5rem;
             background-color: rgba(124, 116, 116, 0.3);
 
             .cta-head {
-                margin-top: 20px;
+                margin-top: 1.25rem;
 
                 h1 {
-                    font-size: 48px;
-                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    font-size: 3rem;
+                    text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
                 }
             }
 
             .cta-content {
-                margin-left: 40px;
-                margin-right: 40px;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
 
                 p {
-                    font-size: 24px;
-                    line-height: 24px;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
                     letter-spacing: 0.1em;
-                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
                 }
             }
 
@@ -89,11 +89,11 @@
                 button {
                     background-color: $primary-color;
                     color: $font-light;
-                    height: 55px;
-                    width: 172px;
+                    height: 3.4375rem;
+                    width: 10.75rem;
 
                     font-weight: 600;
-                    font-size: 18px;
+                    font-size: 1.125rem;
                     letter-spacing: 0.1em;
                 }
             }
@@ -101,7 +101,7 @@
     }
 
     .destinations {
-        margin-top: 3.125rem;
+        margin-top: 50px;
 
         h2 {
             @include black-text;
@@ -112,7 +112,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 2.5rem;
+            margin-top: 40px;
             width: 100%;
 
             button {
@@ -122,18 +122,18 @@
         }
 
         .destinations-content {
-            margin-top: 2rem;
+            margin-top: 32px;
             display: flex;
             flex-direction: column;
-            gap: 2.1875rem;
+            gap: 35px;
 
             .destination {
                 display: flex;
 
                 .destination-image {
                     img {
-                        width: 115px;
-                        height: 115px;
+                        width: 7.1875rem;
+                        height: 7.1875rem;
                     }
                 }
 
@@ -141,17 +141,17 @@
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
-                    margin-left: 1.0625rem;
+                    margin-left: 17px;
 
                     .destination-info-title {
                         @include black-text;
-                        line-height: 24px;
+                        line-height: 1.5rem;
                     }
 
                     .destination-info-desc {
                         @include black-text;
                         font-weight: 300;
-                        font-size: 0.625rem;
+                        font-size: 10px;
                         text-transform: none;
                     }
                 }
@@ -160,16 +160,17 @@
 
         @media only screen and (min-width: $mobile-breakpoint) {
             h2 {
-                font-size: 36px;
+                font-size: 2.25rem;
+                line-height: 2.625rem;
             }
 
             .destinations-content {
                 flex-direction: row;
-                margin-left: 160px;
-                margin-right: 160px;
-                gap: 30px;
+                // margin-left: 10rem;
+                // margin-right: 10rem;
+                gap: 1.875rem;
                 justify-content: center;
-                margin-top: 100px;
+                margin-top: 6.25rem;
 
                 .destination {
                     text-align: center;
@@ -178,23 +179,23 @@
 
                     .destination-image {
                         img {
-                            width: 350px;
-                            height: 350px;
+                            width: 100%;
+                            height: 100%;
                         }
                     }
 
                     .destination-info {
                         justify-content: center;
-                        max-width: 350px;
+                        max-width: 21.875rem;
 
                         .destination-info-title {
-                            font-size: 24px;
+                            font-size: 1.5rem;
                         }
 
                         .destination-info-desc {
-                            margin-top: 10px;
-                            font-size: 18px;
-                            line-height: 22px;
+                            margin-top: 0.625rem;
+                            font-size: 1.125rem;
+                            line-height: 1.375rem;
                         }
                     }
                 }
@@ -202,13 +203,13 @@
             }
 
             .cta-destinations {
-                margin-top: 100px;
-                margin-bottom: 100px;
+                margin-top: 6.25rem;
+                margin-bottom: 6.25rem;
 
                 button {
-                    width: 180px;
-                    height: 55px;
-                    font-size: 18px;
+                    width: 11.25rem;
+                    height: 3.4375rem;
+                    font-size: 1.125rem;
                 }
             }
         }

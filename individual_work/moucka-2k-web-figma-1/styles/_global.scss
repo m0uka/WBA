@@ -120,27 +120,32 @@ footer {
         }
     }
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $mobile-breakpoint) {
         height: $navbar-height-desktop;
+        padding-left: 10%;
+        padding-right: 10%;
 
         .logo {
             img {
                 width: 120px;
                 height: 120px;
             }
-            margin-left: 163px;
         }
 
         .menu {
             .menu-desktop {
                 display: flex;
+                justify-content: right;
+
                 margin-top: 48px;
                 margin-bottom: 48px;
-                margin-right: 165px;
                 gap: 30px;
 
                 .menu-item {
                     padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    min-width: fit-content;
 
                     .menu-item-text {
                         text-decoration: none;
@@ -149,6 +154,7 @@ footer {
                         color: $font-color;
                         font-weight: 700;
                         font-family: $font;
+                        align-items: center;
                     }
                 }
 
