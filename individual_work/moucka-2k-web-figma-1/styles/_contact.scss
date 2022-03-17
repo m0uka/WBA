@@ -15,7 +15,7 @@
             color: white;
         }
 
-        @media only screen and (min-width: 768px) { 
+        @media only screen and (min-width: $mobile-breakpoint) { 
             button {
                 font-size: 18px;
                 width: 180px;
@@ -36,7 +36,7 @@
             text-align: center;
         }
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: $mobile-breakpoint) {
             margin-top: 60px;
             margin-bottom: -20px;
 
@@ -83,7 +83,7 @@
             }
         }
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: $mobile-breakpoint) {
             display: grid;
             
             grid-template-columns: 380px 380px;

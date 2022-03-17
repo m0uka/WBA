@@ -2,7 +2,7 @@
 .container {
     padding: 2.5rem;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $mobile-breakpoint) {
         .main-content {
             height: calc(100vh - #{$navbar-height-desktop});
             display: flex;
@@ -58,7 +58,7 @@
             align-items: center;
         }
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: $mobile-breakpoint) {
             width: 650px;
             height: 350px;
             margin-bottom: 80px;
@@ -157,7 +157,7 @@
             }
         }
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: $mobile-breakpoint) {
             h2 {
                 font-size: 36px;
             }

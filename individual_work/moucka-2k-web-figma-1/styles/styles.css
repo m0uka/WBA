@@ -509,7 +509,7 @@ footer a {
   padding: 2.5rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .container .main-content {
     height: calc(100vh - 120px);
     display: -webkit-box;
@@ -580,7 +580,7 @@ footer a {
           align-items: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .container .cta-block {
     width: 650px;
     height: 350px;
@@ -712,7 +712,7 @@ footer a {
   text-transform: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .container .destinations h2 {
     font-size: 36px;
   }
@@ -829,7 +829,7 @@ footer a {
   font-size: 12px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .info-main-content {
     display: -ms-grid;
     display: grid;
@@ -872,6 +872,7 @@ footer a {
     text-transform: uppercase;
     color: #000000;
     font-size: 18px;
+    line-height: 20px;
   }
 }
 
@@ -902,7 +903,7 @@ footer a {
   color: white;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .contact-main-content .cta-contact button {
     font-size: 18px;
     width: 180px;
@@ -925,7 +926,7 @@ footer a {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .contact-main-content .contact-head {
     margin-top: 60px;
     margin-bottom: -20px;
@@ -999,7 +1000,7 @@ footer a {
   font-size: 13px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .contact-main-content .contact-form {
     display: -ms-grid;
     display: grid;
