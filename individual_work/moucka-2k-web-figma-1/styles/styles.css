@@ -696,6 +696,7 @@ footer a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #000000;
+  line-height: 24px;
 }
 
 .container .destinations .destinations-content .destination .destination-info .destination-info-desc {

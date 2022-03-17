@@ -145,6 +145,7 @@
 
                     .destination-info-title {
                         @include black-text;
+                        line-height: 24px;
                     }
 
                     .destination-info-desc {
